@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Errata: Beginning Python (ISBN 1-59059-519-X)</title>
+
+  
+
+
+  
+  
+  <style type="text/css">
+  .error { color: red;
+    }
+
+  .correction { color: green;
+    }
+
+
+  </style></head><body>
+
+
+<h1>Errata: Beginning Python (ISBN 1-59059-519-X)</h1>
+
+
+<p><span style="font-weight: bold;">Note</span>:
+These errata refer to
+the first printing of the book. Some have been corrected in later
+printings.
+</p>
+
+
+<h2>Chapter 1</h2>
+
+
+<p>On page 20, the reader is instructed to <span class="error">put the </span><span class="error" style="font-family: monospace;">python.exe</span><span class="error"> file
+in the </span><span class="error" style="font-family: monospace;">PATH</span><span class="error">
+environment variable</span> to
+execute Python from the command line on Windows. Rather than doing
+this, <span class="correction">the directory </span><span class="correction" style="font-style: italic;">containing</span><span class="correction">
+the Python executable should be added to the </span><span class="correction" style="font-family: monospace;">PATH</span><span class="correction"> variable</span>.
+</p>
+
+
+<p>On page 21 ...
+</p>
+
+
+<pre class="error">#/usr/bin/python2</pre>
+
+
+<p>... should be ...
+</p>
+
+
+<pre class="correction">#!/usr/bin/python2</pre>
+
+
+<h2>Chapter 5</h2>
+
+
+On page 90, last two lines ...<br>
+
+
+<pre class="error">&gt;&gt;&gt; x is y<br>True</pre>
+
+
+<p>... should be ...
+</p>
+
+
+<pre class="correction">&gt;&gt;&gt; x is y<br>False</pre>
+
+<h2>Chapter 7</h2>
+
+<p>On page 147, all uses of <span class="error">larch</span> should be <span class="correction">lark</span>.</p>
+
+<h2>Chapter 9</h2>
+
+
+<p>On page 183 ...</p>
+
+
+<p class="error">[...] its subclass (<code>list</code>)
+[...]</p>
+
+
+<p>... should be ...</p>
+
+
+<p class="correction">[...] its superclass (<code>list</code>)
+[...]</p>
+
+<h2>Chapter 10</h2>
+
+<p>On page 228 ...</p>
+
+<p class="error"><var>a</var> &lt; <var>n</var> &lt; <var>b</var></p>
+
+<p>... should be ...</p>
+
+<p class="correction"><var>a</var> &#8804; <var>n</var> &lt; <var>b</var></p>
+
+<h2>Chapter 12</h2>
+
+
+<p>On page 277 ...
+</p>
+
+
+<pre class="error">vbox.Add(contents, proportion=1, flag=wx.EXPAND | wx.LEFT | wx.LEFT | wx.LEFT, border=5)</pre>
+
+
+<p>... should be ...
+</p>
+
+
+<pre class="correction">vbox.Add(contents, proportion=1, flag=wx.EXPAND | wx.LEFT | wx.BOTTOM | wx.RIGHT, border=5)</pre>
+
+
+<h2>Chapter 13</h2>
+
+
+<p>In Listing 13-1,&nbsp;you may need to change
+...
+</p>
+
+
+<pre class="error">import sqlite</pre>
+
+
+<p>... into ...
+</p>
+
+
+<pre class="correction">from pysqlite import dbapi2 as sqlite</pre>
+
+
+<p>Note that in Python 2.5, the Pysqlite wrapper is included as
+the <span style="font-family: monospace;">sqlite3</span>
+module.
+</p>
+
+
+<h2>Chapter 14</h2>
+
+
+<p>On page 297...
+</p>
+
+
+<p class="error">I discuss the urllib module in Chapter 10
+</p>
+
+
+<p>... should be ...
+</p>
+
+
+<p class="correction">I discuss the urllib module in Chapter 14</p>
+
+
+<h2>Chapter 15</h2>
+
+
+<p>On page 338 ...</p>
+
+
+<pre class="error">&gt;&gt;&gt; items[0].keys()['link', 'description', 'title']</pre>
+
+
+<p>... should be ...</p>
+
+
+<pre class="correction">&gt;&gt;&gt; items[0].keys()<br>['link', 'description', 'title']</pre>
+
+
+<h2>Chapter 20</h2>
+
+
+<p>On page 403 ...</p>
+
+
+<p class="error">Its condition is a
+reimplementation [...]</p>
+
+
+<p>... should be ...</p>
+
+
+<p class="correction">Its action is a reimplementation
+[...]</p>
+
+
+<h2>Appendix B</h2>
+
+
+<p>On page 569 ...
+</p>
+
+
+<pre class="error">while &lt; 100:</pre>
+
+
+<p class="">... should be ...
+</p>
+
+
+<pre class="correction">while x &lt; 100:</pre>
+
+
+</body></html>
